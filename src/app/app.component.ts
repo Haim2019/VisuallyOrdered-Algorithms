@@ -6,6 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Learning Angular';
-  heart = '<3';
+  private title = 'Learning Angular';
+  private heart = '<3';
+
+  getTitle(){
+    return this.title;
+  }
+  getHeart(){
+    return this.heart;
+  }
 }
